@@ -27,6 +27,14 @@ class ArticlesController < ApplicationController
     redirect_to category_article_path(@article.category, @article)
   end
 
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+
+    flash[:notice] = "Successfully deleted the page!"
+    redirect_to category_path(@article.category)
+  end
+
   private
 
   def article_params

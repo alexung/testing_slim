@@ -7,3 +7,5 @@ p = @article.price
 p = @article.address
 
 a href=(edit_category_article_path @article.category, @article) = "Edit Article"
+br
+= link_to "Delete Article", category_article_path(@article.category, @article), method: :delete, data: {confirm: "Are you sure you want to delete this listing?"}
