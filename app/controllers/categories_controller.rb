@@ -1,8 +1,6 @@
 class CategoriesController < ApplicationController
   def index
-    # TODO properly configure application.html.slim
-    # TODO check to see if the scss sheets that were created work
-
+    # TODO lol
     # FIXME lolol2
     # OPTIMIZE lolol3
 
