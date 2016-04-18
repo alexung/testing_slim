@@ -3,7 +3,7 @@ h1 = @category.title
 ul
 - @articles.each do |a|
   li
-    a href=(category_articles_path @category, a) = a.title
+    a href=(category_article_path @category, a) = a.title
 
 
 a href=(new_category_article_path @category) = "New Article"
