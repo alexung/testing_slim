@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+# debugging
+gem 'pry'
 # Slim templating language
 gem 'slim'
 # Allows .slim extension files to be created when you generate a controller, slim templates will be cached, slim will be loaded and initialized when rails s
