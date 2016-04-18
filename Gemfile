@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
 
-#slim templating language
+# Slim templating language
 gem 'slim'
+# Allows .slim extension files to be created when you generate a controller, slim templates will be cached, slim will be loaded and initialized when rails s
+gem 'slim-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
