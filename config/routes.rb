@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root "categories#index"
-  resources :categories do
+  resources :categories do |categories|
     resources :articles
   end
 end
