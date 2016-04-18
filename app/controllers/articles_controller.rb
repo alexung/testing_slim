@@ -14,7 +14,19 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     @article.category = Category.find(params[:category_id])
     @article.save
-      redirect_to category_path(@article.category)
+
+    redirect_to category_path(@article.category)
+  end
+
+  def edit
+    @article = Article.find(params[:id])
+  end
+
+  def update
+    @article = Article.find(params[:id])
+    @article.update(article_params)
+
+    redirect_to category_article_path(@article.category, @article)
   end
 
   private
