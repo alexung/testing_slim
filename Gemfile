@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'capybara'
 # faker for creating data
 gem 'faker'
 # debugging
