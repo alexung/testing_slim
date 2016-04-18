@@ -10,6 +10,6 @@ class CategoriesController < ApplicationController
   def show
     @category = Category.find(params[:id])
     #binding.pry
-    #puts @category
+    @articles = @category.articles
   end
 end
