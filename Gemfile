@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# faker for creating data
+gem 'faker'
 # debugging
 gem 'pry'
 # Slim templating language
