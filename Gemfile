@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'launchy'
+gem 'rspec-rails'
 gem 'capybara'
 # faker for creating data
 gem 'faker'
