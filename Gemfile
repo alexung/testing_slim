@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'factory_girl_rails'
+gem 'rb-fsevent'
+# https://github.com/guard/guard
+gem 'guard-rspec', '4.6.0 '
+
 gem 'launchy'
 gem 'rspec-rails'
 gem 'capybara'
