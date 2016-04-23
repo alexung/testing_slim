@@ -1,13 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'factory_girl_rails'
-gem 'rb-fsevent'
-# https://github.com/guard/guard
-gem 'guard-rspec', '4.6.0 '
-
-gem 'launchy'
-gem 'rspec-rails'
-gem 'capybara'
 # faker for creating data
 gem 'faker'
 # debugging
@@ -50,6 +42,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'factory_girl_rails'
+  gem 'rb-fsevent'
+  # https://github.com/guard/guard
+  gem 'guard-rspec', '4.6.0 '
+  gem 'selenium-webdriver'
+  gem 'launchy'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
 end
 
 group :development do
