@@ -13,7 +13,7 @@ feature "Categories", %q{
   end
 
   scenario "root page" do
-    visit '/'
+    visit root_path
     page.should have_content("Craigslist Slim Practice")
   end
 
