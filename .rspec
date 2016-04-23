@@ -1,2 +1,2 @@
---color
+--color --tag ~js
 --require spec_helper

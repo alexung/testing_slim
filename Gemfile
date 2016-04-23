@@ -1,13 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'factory_girl_rails'
-gem 'rb-fsevent'
-# https://github.com/guard/guard
-gem 'guard-rspec', '4.6.0 '
-
-gem 'launchy'
-gem 'rspec-rails'
-gem 'capybara'
 # faker for creating data
 gem 'faker'
 # debugging
@@ -48,8 +40,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  # gem 'byebug'
+  # gem 'factory_girl_rails'
+  # gem 'rb-fsevent'
+  # # https://github.com/guard/guard
+  # gem 'guard-rspec', '4.6.0 '
+  # gem 'selenium-webdriver'
+  # gem 'launchy'
+  # gem 'database_cleaner'
 end
 
 group :development do
@@ -58,5 +59,17 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+    # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # gem 'byebug'
+  # gem 'factory_girl_rails'
+  # gem 'rb-fsevent'
+  # https://github.com/guard/guard
+  # gem 'guard-rspec', '4.6.0 '
+  # gem 'selenium-webdriver'
+  # gem 'launchy'
+  # gem 'rspec-rails'
+  # gem 'capybara',:git => 'git://github.com/jnicklas/capybara.git'
+  # gem 'database_cleaner'
 end
 
